@@ -1,0 +1,19 @@
+.search_active .search__box {
+  width: 100%;
+  border-bottom: 2px solid #fdce25;
+  justify-content: normal;
+}
+.search_active .search__input {
+  width: 100%;
+}
+.search_active .search__history {
+  display: flex;
+}
+.search_active .search__history__box:nth-child(-n + 3) {
+  display: block;
+}
+.search_active .search__history__box:nth-child(n + 4),
+.search_active .search__results {
+  display: none;
+}
+/*# sourceMappingURL=search_active.css.map */

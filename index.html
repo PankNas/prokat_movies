@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Тинькофф Прокат</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/less/movies.css" />
+
+    <link rel="stylesheet" href="src/less/search_active.css" />
+    <link rel="stylesheet" href="src/less/search_more_history.css" />
+    <link rel="stylesheet" href="src/less/search_live.css" />
+    <link rel="stylesheet" href="src/less/search_not_found.css" />
+    <link rel="stylesheet" href="src/less/search_scroll.css" />
+
+    <script type="module" src="src/index.js"></script>
+    <script type="module" src="src/storage.js"></script>
+  </head>
+
+  <body>
+    <header class="logo container">
+      <img src="src/img/logo/symbol-t.png" alt="logo-img" class="logo__img" />
+      <img
+        src="src/img/logo/play.png"
+        alt="logo-img"
+        class="logo__img__center"
+      />
+      <img
+        src="src/img/logo/stop.png"
+        alt="logo-img"
+        class="logo__img__center"
+      />
+      <img src="src/img/logo/symbol-p.png" alt="logo-img" class="logo__img" />
+    </header>
+
+    <section data-id="main" class="main">
+      <div class="search__box">
+        <img
+          src="src/img/icon/glass.png"
+          alt="search-glass"
+          class="search__glass"
+        />
+        <input
+          id="search-input"
+          class="search__input"
+          type="search"
+          placeholder="Поиск фильмов по жанрам и актерам"
+        />
+      </div>
+
+      <div class="container">
+        <ul
+          data-id="list_search_history"
+          class="search__history search__history_indent"
+        ></ul>
+
+        <div
+          data-id="search_results"
+          class="search__results search__result_indent"
+        >
+          <!--          <h1 class="search__results__title search__results__title_no-results">-->
+          <!--            Мы не поняли о чем речь ¯\_(ツ)_/¯-->
+          <!--          </h1>-->
+          <h1
+            data-id="search_title_live"
+            class="search__results__title search__results__title_live"
+          ></h1>
+
+          <div data-id="search_movies" class="search__results__movies">
+            <!--            								<div class="search__results__movies__card">-->
+            <!--            										<div class="search__results__movies__card__no-content">-->
+            <!--            												<div class="search__results__movies__card__box-1"></div>-->
+            <!--            												<div class="search__results__movies__card__box-2"></div>-->
+            <!--            										</div>-->
+            <!--            								</div>-->
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__text">© 2019 Тинькофф Прокат</p>
+      </footer>
+      <footer class="footer_small_page">
+        <p class="footer__text">© 2019 Тинькофф Прокат</p>
+      </footer>
+    </section>
+  </body>
+</html>

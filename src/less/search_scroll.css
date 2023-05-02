@@ -1,0 +1,13 @@
+.search_scroll .search__box {
+  max-width: 100%;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid #ffffff;
+  background-color: rgba(28, 28, 28, 0.8);
+  backdrop-filter: blur(2px);
+}
+.search_scroll .search__input {
+  max-width: 1230px;
+}
+/*# sourceMappingURL=search_scroll.css.map */
